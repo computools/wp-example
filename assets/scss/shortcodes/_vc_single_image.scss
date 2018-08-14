@@ -1,0 +1,29 @@
+.wpb_single_image {
+	&.vc_full_width {
+		img {
+			width: 100%;
+		}
+	}
+	.vc_figure {
+		width: 100%;
+	}
+	.vc_single_image-wrapper {
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.wpb_single_image {
+		&.vc_tablet_align_center {
+			text-align: center !important;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.wpb_single_image {
+		&.vc_mobile_align_center {
+			text-align: center !important;
+		}
+	}
+}

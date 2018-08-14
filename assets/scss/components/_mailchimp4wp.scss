@@ -1,0 +1,24 @@
+.form-subscribe {
+	display: flex;
+	margin: 0 -10px;
+	.form-item-wrap {
+		padding: 0 10px;
+	}
+	.form-input {
+		width: 50%;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.form-subscribe {
+		display: block;
+		margin: 0 -10px;
+		.form-item-wrap {
+			padding: 0 10px;
+		}
+		.form-input {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+}

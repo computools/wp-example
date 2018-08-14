@@ -1,0 +1,23 @@
+a {
+	color: $color__link;
+	text-decoration: none;
+	@extend %transit;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:hover,
+	&:active,
+	&:focus {
+		outline: 0;
+	}
+	&[href^=tel] {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.link-secret {
+	color: currentColor;
+}

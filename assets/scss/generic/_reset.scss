@@ -1,0 +1,17 @@
+// Fixed: Font weight on osx bolder than window.
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; /* firefox font smoothing css */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+input[type="search"] {
+	box-sizing: inherit;
+}
+
+p {
+	@extend %clearfix;
+}

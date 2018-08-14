@@ -1,0 +1,64 @@
+.tm-twitter {
+	&.style-slider {
+		max-width: 900px;
+		margin: 0 auto;
+		.tweet {
+			position: relative;
+			text-align: center;
+			&:before {
+				display: block;
+				content: "\f099";
+				font-size: 120px;
+				line-height: 1;
+				font-family: FontAwesome;
+				margin-bottom: 10px;
+			}
+			.tweet-heading {
+				font-size: 32px;
+			}
+			.tweet-text {
+				font-size: 24px;
+				margin-top: 40px;
+			}
+			+ .tweet {
+				margin-top: 10px;
+				padding-top: 10px;
+				border-top: 1px solid #eeeeee;
+				&:before {
+					top: 13px;
+				}
+			}
+		}
+	}
+	&.style-list {
+		.item {
+			+ .item {
+				margin-top: 45px;
+			}
+		}
+		.tweet {
+			position: relative;
+			padding-left: 31px;
+			&:before {
+				position: absolute;
+				top: 3px;
+				left: 0;
+				content: "\f099";
+				font-size: 18px;
+				font-family: FontAwesome;
+				line-height: 1;
+			}
+			.tweet-date {
+				font-size: 12px;
+			}
+			+ .tweet {
+				margin-top: 10px;
+				padding-top: 10px;
+				border-top: 1px solid #eeeeee;
+				&:before {
+					top: 13px;
+				}
+			}
+		}
+	}
+}

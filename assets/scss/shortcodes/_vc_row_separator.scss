@@ -1,0 +1,138 @@
+.vc_row-has-separator {
+	position: relative;
+	overflow: visible !important;
+	.vc_column_container {
+		z-index: 2;
+	}
+}
+
+.vc_row-big_triangle {
+	.vc_row-separator {
+		&:before {
+			right: 50%;
+			border-right: 1000px solid #ffffff;
+			border-left: 1000px solid;
+		}
+
+		&:after {
+			left: 50%;
+			border-right: 1000px solid;
+			border-left: 1000px solid #ffffff;
+		}
+
+		&:after,
+		&:before {
+			position: absolute;
+			bottom: -108px;
+			z-index: 1;
+			width: 50%;
+			border-bottom: 310px solid #1e73be;
+			/* Change the height and the color below */
+			content: '';
+			transform: rotate(.000001deg);
+		}
+	}
+}
+
+.vc_row-triangle {
+	&.vc_row-separator-up {
+		.vc_row-separator {
+			&:before {
+				content: '';
+				top: -50px;
+			}
+		}
+	}
+	&.vc_row-separator-down {
+		.vc_row-separator {
+			&:after {
+				content: '';
+				bottom: -50px;
+			}
+		}
+	}
+	&.vc_row-separator-both {
+		.vc_row-separator {
+			&:before {
+				content: '';
+				top: -50px;
+			}
+			&:after {
+				content: '';
+				bottom: -50px;
+			}
+		}
+	}
+	.vc_row-separator {
+		background: inherit;
+		&:before,
+		&:after {
+			position: absolute;
+			left: 50%;
+			width: 100px;
+			height: 100px;
+			transform: translateX(-50%) rotate(45deg);
+			pointer-events: none;
+			background: inherit;
+			z-index: 10;
+		}
+	}
+}
+
+.vc_row-half_circle {
+	&.vc_row-separator-up {
+		.vc_row-separator {
+			&:before {
+				content: '';
+				top: -50px;
+			}
+		}
+	}
+	&.vc_row-separator-down {
+		.vc_row-separator {
+			&:after {
+				content: '';
+				bottom: -50px;
+			}
+		}
+	}
+	&.vc_row-separator-both {
+		.vc_row-separator {
+			&:before {
+				content: '';
+				top: -50px;
+			}
+			&:after {
+				content: '';
+				bottom: -50px;
+			}
+		}
+	}
+	.vc_row-separator {
+		background: inherit;
+		&:before,
+		&:after {
+			position: absolute;
+			left: 50%;
+			z-index: 10;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: inherit;
+			transform: translateX(-50%);
+			pointer-events: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.vc_row-big_triangle {
+		.vc_row-separator {
+			&:after,
+			&:before {
+				bottom: -40px;
+				border-bottom-width: 200px;
+			}
+		}
+	}
+}

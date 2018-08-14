@@ -1,0 +1,145 @@
+.tm-team-member {
+	position: relative;
+	.photo {
+		img {
+			width: 100%;
+		}
+	}
+	&.style-1 {
+		.photo {
+			margin-bottom: 34px;
+		}
+		.info-inner {
+			display: table;
+			width: 100%;
+			height: 100%;
+		}
+		.info-wrap {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.info-footer {
+			position: relative;
+			margin-top: 45px;
+			padding-top: 20px;
+			&:before,
+			&:after {
+				position: absolute;
+				content: '';
+				display: block;
+				top: 0;
+				left: 0;
+			}
+			&:before {
+				width: 100%;
+				height: 1px;
+				background: #eeeeee;
+			}
+			&:after {
+				@extend %transit2;
+				width: 0;
+				height: 2px;
+				z-index: 1;
+			}
+		}
+		.social-networks {
+			margin: 0 -8px;
+			a {
+				display: inline-block;
+				padding: 5px 8px;
+				font-size: 18px;
+				line-height: 1;
+				color: #aaaaaa;
+			}
+		}
+		.name {
+			font-size: 30px;
+			line-height: 1.2;
+			margin-bottom: 3px;
+		}
+		.position {
+			font-size: 16px;
+			font-weight: 500;
+			margin-bottom: 11px;
+		}
+		&:hover {
+			.social-networks {
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+	}
+	&.style-2 {
+		.overlay {
+			@extend %transit2;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+			background: #000000;
+		}
+		.info {
+			@extend %transit2;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			text-align: center;
+			opacity: 0;
+			visibility: hidden;
+		}
+		&:hover {
+			.overlay {
+				opacity: .8;
+				visibility: visible;
+			}
+			.info {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.info-inner {
+			display: table;
+			width: 100%;
+			height: 100%;
+		}
+		.info-wrap {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 30px;
+		}
+		.social-networks {
+			position: absolute;
+			bottom: 43px;
+			left: 0;
+			width: 100%;
+			a {
+				display: inline-block;
+				padding: 5px 11px;
+				color: #ffffff;
+				font-size: 18px;
+				line-height: 1;
+			}
+		}
+		.name {
+			color: #ffffff;
+			font-size: 30px;
+			letter-spacing: -.02em;
+			margin-bottom: 5px;
+		}
+		.position {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 1.2;
+			margin-bottom: 10px;
+		}
+		.description {
+			color: #ffffff;
+		}
+	}
+}

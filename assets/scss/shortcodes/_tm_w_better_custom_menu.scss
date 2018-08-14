@@ -1,0 +1,28 @@
+.page-content {
+	.tm-custom-menu {
+		.widget {
+			margin: 0 !important;
+		}
+		&.style-1 {
+			.menu {
+				> li {
+					margin: 0;
+					> a {
+						font-size: 14px;
+						color: inherit;
+					}
+				}
+			}
+		}
+		&.horizontal {
+			.menu {
+				margin: 0 -5px;
+				> li {
+					display: inline-block;
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,46 @@
+/* Begin Make footer always bottom of page */
+@media only screen and (min-width: 1024px) {
+	#footer-wrap {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+	}
+
+	.page-footer-parallax {
+		&:not(.page-template-one-page-scroll) {
+			height: 100%;
+			.site {
+				min-height: 100%;
+				position: static;
+			}
+			.content-wrapper {
+				position: relative;
+				z-index: 3;
+				background: inherit;
+			}
+			.page-footer-wrapper {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1;
+			}
+		}
+	}
+
+	.page-footer-parallax {
+		&:not(.header04) {
+			.site {
+				background-color: inherit;
+			}
+		}
+	}
+}
+
+body {
+	background-size: cover;
+}
+
+.site {
+	overflow: hidden;
+}

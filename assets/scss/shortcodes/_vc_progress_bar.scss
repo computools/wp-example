@@ -1,0 +1,40 @@
+.vc_progress_bar {
+	.vc_single_bar_wrapper {
+		+ .vc_single_bar_wrapper {
+			margin-top: 48px;
+		}
+	}
+	.vc_single_bar_title {
+		@extend %clearfix;
+		margin-bottom: 12px;
+		.vc_label_text {
+			text-transform: uppercase;
+			font-weight: 600;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+		.vc_label_units {
+			float: right;
+			font-weight: normal;
+			font-size: 14px;
+		}
+	}
+	.vc_general {
+		&.vc_single_bar {
+			height: 3px;
+			border-radius: 0;
+			box-shadow: none;
+			.vc_label {
+				padding: 0;
+			}
+			.vc_bar {
+				border-radius: 0;
+			}
+		}
+	}
+	&.style-2 {
+		.vc_single_bar_title {
+			width: 100% !important;
+		}
+	}
+}

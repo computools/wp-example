@@ -1,0 +1,32 @@
+.widget_search,
+.widget_product_search {
+	form {
+		position: relative;
+	}
+	.search-field {
+		width: 100%;
+		height: 50px;
+		padding-right: 20px;
+		font-size: 16px;
+	}
+	.search-submit {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		padding: 0;
+		width: 16px;
+		height: 16px;
+		border: 0;
+		background: transparent;
+		text-align: center;
+		line-height: 16px;
+		transform: translate(0, -50%);
+		color: #333333;
+		i {
+			font-size: 16px;
+			&:before {
+				font-weight: bold;
+			}
+		}
+	}
+}

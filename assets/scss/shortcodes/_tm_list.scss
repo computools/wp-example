@@ -1,0 +1,160 @@
+.tm-list {
+	@extend %clearfix;
+	margin: 0 -15px 30px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tm-list__item {
+	position: relative;
+	margin-bottom: 16px;
+	padding: 0 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&:first-child:last-child {
+		margin-bottom: 0;
+	}
+
+	.tm-list--modern-icon & {
+		margin-bottom: 30px;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 70px;
+		}
+
+	}
+
+	.tm-list--circle & {
+		position: relative;
+		padding-left: 29px;
+		.tm-list__marker {
+			&:before {
+				position: absolute;
+				top: 10px;
+				left: 15px;
+				display: block;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				content: '';
+				background: currentColor;
+			}
+		}
+	}
+
+	.tm-list--delimited & {
+		padding: 22px 15px;
+		margin: 0;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 15px;
+			right: 15px;
+			height: 1px;
+			background: rgba(255, 255, 255, .1);
+		}
+	}
+
+	.tm-list--icon-above & {
+		margin-bottom: 30px;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.tm-list__header {
+	.tm-list--modern-icon & {
+		@extend %clearfix;
+		margin-bottom: 18px;
+	}
+}
+
+.tm-list__marker {
+	display: inline-block;
+	float: left;
+
+	.tm-list--modern-icon & {
+		margin-right: 10px;
+		min-width: 36px;
+		font-size: 34px;
+		line-height: 1;
+		@include media-breakpoint-down(sm) {
+			min-width: 30px;
+			font-size: 28px;
+		}
+	}
+
+	.tm-list--icon-above & {
+		font-size: 40px;
+		display: block;
+		float: none;
+		line-height: 1;
+		margin-bottom: 15px;
+		@include media-breakpoint-down(sm) {
+			font-size: 34px;
+		}
+	}
+
+	.tm-list--icon & {
+		min-width: calc(1em + 8px);
+	}
+
+	.tm-list--auto-numbered &,
+	.tm-list--manual-numbered & {
+		margin-right: 10px;
+		min-width: 1em;
+	}
+
+	.tm-list--basic & {
+		margin-right: 5px;
+	}
+
+	.tm-list--plus & {
+		margin-right: 10px;
+	}
+
+	.mega-menu-content.mega-menu-content & {
+		color: inherit;
+	}
+
+}
+
+.tm-list__heading {
+	overflow: hidden;
+}
+
+.tm-list__link {
+	padding: 0;
+	color: currentColor;
+}
+
+.tm-list__title {
+	line-height: inherit;
+	.tm-list--modern-icon & {
+		font-size: 24px;
+		@include media-breakpoint-down(sm) {
+			font-size: 18px;
+		}
+	}
+
+	.tm-list--icon &,
+	.tm-list--basic &,
+	.tm-list--plus &,
+	.tm-list--auto-numbered &,
+	.tm-list--manual-numbered &,
+	.tm-list--circle &,
+	.tm-list--delimited &,
+	.tm-list--icon-above & {
+		color: inherit;
+		font-size: inherit;
+	}
+}
+
+.tm-list__desc {
+	font-size: 16px;
+	line-height: 1.5;
+}
+

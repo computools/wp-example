@@ -1,0 +1,15 @@
+.tm-button-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: -15px;
+	&.right {
+		justify-content: flex-end;
+	}
+	&.center {
+		justify-content: center;
+	}
+	.tm-button-wrapper {
+		padding: 15px;
+	}
+}

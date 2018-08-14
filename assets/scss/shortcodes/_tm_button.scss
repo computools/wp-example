@@ -1,0 +1,212 @@
+.tm-button {
+	@extend %transit;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	line-height: 1.2;
+	border-style: solid;
+	&.tm-button-full-wide {
+		width: 100% !important;
+	}
+	&.style-flat {
+		padding: 0 33px;
+		height: 55px;
+		border-width: 0;
+		border-radius: 26px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 55px;
+		&.has-icon.icon-right {
+			padding-right: 50px;
+			.button-icon {
+				right: 20px;
+			}
+		}
+		&.has-icon.icon-left {
+			padding-left: 50px;
+			.button-icon {
+				left: 20px;
+			}
+		}
+		.button-icon {
+			font-weight: bold;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+		&.tm-button-primary,
+		&.tm-button-secondary {
+			color: #fff;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+
+		&.tm-button-white {
+			background-color: #fff;
+			color: #222;
+			border-color: #fff;
+
+			/*&:hover {
+				color: #fff;
+				border-color: #222;
+				background-color: #222;
+			}*/
+		}
+
+		&.tm-button-lg {
+			padding: 0 38px;
+			height: 60px;
+			border-radius: 30px;
+			font-size: 15px;
+			line-height: 60px;
+		}
+		&.tm-button-sm {
+			padding: 0 29px;
+			height: 50px;
+			font-size: 13px;
+			line-height: 50px;
+		}
+		&.tm-button-xs {
+			padding: 0 25px;
+			height: 45px;
+			border-radius: 22px;
+			font-size: 12px;
+			line-height: 45px;
+		}
+	}
+	&.style-outline {
+		padding: 0 33px;
+		height: 55px;
+		border-width: 2px;
+		border-radius: 26px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 51px;
+		&.has-icon.icon-right {
+			padding-right: 50px;
+		}
+		&.has-icon.icon-left {
+			padding-left: 50px;
+		}
+		.button-icon {
+			font-weight: bold;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			right: 20px;
+		}
+		&.tm-button-primary,
+		&.tm-button-secondary {
+			background-color: transparent;
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		&.tm-button-white {
+			background-color: transparent;
+			color: #fff;
+			border-color: #fff;
+
+			&:hover {
+				background-color: #fff;
+				color: #222;
+			}
+		}
+
+		&.tm-button-lg {
+			padding: 0 38px;
+			height: 60px;
+			border-radius: 30px;
+			font-size: 15px;
+			line-height: 56px;
+		}
+		&.tm-button-sm {
+			padding: 0 29px;
+			height: 50px;
+			font-size: 13px;
+			line-height: 46px;
+		}
+		&.tm-button-xs {
+			padding: 0 25px;
+			height: 45px;
+			border-radius: 22px;
+			font-size: 12px;
+			line-height: 41px;
+		}
+	}
+	&.style-text {
+		padding: 0 35px 0 0;
+		border: 0;
+		background-color: transparent;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		font-weight: 600;
+		font-size: 14px;
+		.button-icon {
+			@extend %transit2;
+			font-weight: bold;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			right: 0;
+			line-height: .65em;
+			font-size: 22.6px;
+		}
+		&:hover {
+			.button-icon {
+				transform: translate(10px, -50%);
+			}
+		}
+		&.tm-button-lg {
+			font-size: 15px;
+			.button-icon {
+				font-size: 23.5px;
+				line-height: .6;
+			}
+		}
+		&.tm-button-sm {
+			font-size: 13px;
+			padding-right: 31px;
+			.button-icon {
+				font-size: 18.69px;
+			}
+		}
+		&.tm-button-xs {
+			font-size: 12px;
+			padding-right: 27px;
+			.button-icon {
+				font-size: 13.8px;
+				line-height: .7em;
+			}
+		}
+		&.tm-button-white {
+			color: #fff;
+		}
+	}
+}
+
+.rev-btn {
+	transition: background-color .5s cubic-bezier(.645, .045, .355, 1), border-color .5s cubic-bezier(.645, .045, .355, 1), color .5s cubic-bezier(.645, .045, .355, 1) !important;
+}
+
+.rev_slider {
+
+	.btn-icon {
+		font-size: 18px;
+	}
+
+	.left-icon {
+		margin-right: 10px;
+	}
+
+	.right-icon {
+		margin-left: 10px;
+	}
+}

@@ -1,0 +1,63 @@
+html {
+	.row {
+		&:before,
+		&:after {
+			display: block;
+		}
+	}
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15,
+.col-xl-15,
+.col-xxl-15 {
+	position: relative;
+	min-height: 1px;
+	padding-left: .9375rem;
+	padding-right: .9375rem;
+	width: 100%;
+}
+
+@include media-breakpoint-up(xs) {
+	.col-xs-15 {
+		flex: 20%;
+		max-width: 20%;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.col-sm-15 {
+		flex: 20%;
+		max-width: 20%;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.col-md-15 {
+		flex: 20%;
+		max-width: 20%;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.col-lg-15 {
+		flex: 20%;
+		max-width: 20%;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.col-xl-15 {
+		flex: 20%;
+		max-width: 20%;
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	.col-xxl-15 {
+		flex: 20%;
+		max-width: 20%;
+	}
+}

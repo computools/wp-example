@@ -1,0 +1,129 @@
+.comment-nav-links,
+.page-pagination {
+	margin: -5px;
+	padding: 0;
+	li {
+		display: inline-block;
+		padding: 5px;
+		list-style-type: none;
+		span,
+		a {
+			display: block;
+			padding: 0;
+			width: 40px;
+			height: 40px;
+			border: 1px solid #dddddd;
+			background: #ffffff;
+			border-radius: 100%;
+			text-align: center;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 38px;
+		}
+		.dots {
+			font-size: 14px;
+			font-weight: 400;
+			color: #dddddd;
+			border: 0;
+			background: none;
+			width: 20px;
+		}
+		.next,
+		.prev {
+			border: 0;
+		}
+		a:hover,
+		a:focus,
+		span.current {
+			color: #ffffff;
+		}
+	}
+}
+
+.page-pagination {
+	margin-top: 30px;
+}
+
+.comment-nav-links {
+	ul {
+		padding: 0;
+	}
+}
+
+#comment-nav-above {
+	ul {
+		margin: 50px 0;
+	}
+}
+
+#comment-nav-below {
+	ul {
+		margin: 0 0 74px;
+	}
+}
+
+.page-links {
+	@extend %clearfix;
+	margin: 40px -5px 0;
+	> span,
+	> a {
+		display: block;
+		float: left;
+		margin: 5px;
+		width: 40px;
+		height: 40px;
+		border: 1px solid #dddddd;
+		border-radius: 100%;
+		text-align: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 38px;
+	}
+	> a:hover,
+	> a:focus,
+	> span {
+		color: #ffffff;
+	}
+}
+
+.nav-links {
+	display: flex;
+	margin-bottom: 30px;
+	.nav-previous,
+	.nav-next {
+		width: 50%;
+	}
+	.nav-previous {
+		text-align: left;
+		a {
+			padding-left: 25px;
+			&:after {
+				left: 0;
+				content: '\f104';
+			}
+		}
+	}
+	.nav-next {
+		text-align: right;
+		align-items: flex-end;
+		a {
+			padding-right: 25px;
+			&:after {
+				right: 0;
+				content: '\f105';
+			}
+		}
+	}
+	a {
+		position: relative;
+		display: block;
+		&:after {
+			position: absolute;
+			top: 50%;
+			height: 10px;
+			font-family: FontAwesome;
+			line-height: 10px;
+			transform: translate(0, -50%);
+		}
+	}
+}

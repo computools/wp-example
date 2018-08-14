@@ -1,0 +1,90 @@
+.tm-counter {
+	margin-bottom: 30px;
+	&.style-1 {
+		.counter-wrap {
+			position: relative;
+		}
+		.icon {
+			position: absolute;
+			top: -12px;
+			left: 0;
+			font-size: 130px;
+			opacity: .08;
+			line-height: 1;
+		}
+		.number-wrap {
+			display: flex;
+			margin-bottom: 7px;
+			font-size: 50px;
+			line-height: 1.2;
+		}
+		.text {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 1.2;
+		}
+		&.skin-light {
+			.icon {
+				color: #ffffff;
+			}
+			.text {
+				color: #ffffff;
+			}
+		}
+		&.align-left {
+			/*.icon {
+				left: 50px;
+			}
+			.counter-wrap {
+				padding-left: 50px;
+			}*/
+		}
+		&.align-center {
+			.icon {
+				right: 50%;
+				left: auto;
+			}
+		}
+		&.align-right {
+			.icon {
+				right: 50px;
+			}
+		}
+	}
+	&.align-left {
+		.number-wrap {
+			justify-content: flex-start;
+		}
+	}
+	&.align-center {
+		.number-wrap {
+			justify-content: center;
+		}
+	}
+	&.align-right {
+		.number-wrap {
+			justify-content: flex-end;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-counter {
+		&.style-1 {
+			.icon {
+				font-size: 100px;
+				top: 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-counter {
+		&.style-1 {
+			.icon {
+				font-size: 80px;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.vc_row {
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+}
+
+.vc_row.vc_row[data-vc-full-width] {
+	overflow: visible;
+}
+
+[data-row-effect="firefly"] {
+	position: relative;
+}
+
+.firefly-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.vc_row-has-overlay {
+	position: relative;
+	.vc_row-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.wrapper-full-height {
+	.wpb_wrapper {
+		height: 100%;
+	}
+}
+
+.vc_col-sm-15 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+	.vc_column_container.vc_col-sm-15 {
+		float: left;
+		width: 20%;
+	}
+}

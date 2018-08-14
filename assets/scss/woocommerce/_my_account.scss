@@ -1,0 +1,43 @@
+.woocommerce {
+	form.login {
+		margin: 39px 0 0;
+	}
+	.woocommerce-MyAccount-navigation {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			a {
+				position: relative;
+				display: block;
+				padding: 15px 0 15px 20px;
+				border-bottom: 1px solid #f1eeea;
+				&:before {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					content: '\f105';
+					font-family: FontAwesome;
+					transform: translate(0, -50%);
+				}
+			}
+		}
+	}
+}
+
+.woocommerce-edit-account {
+	.woocommerce {
+		.woocommerce-Button {
+			margin-top: 30px;
+		}
+	}
+}
+
+.woocommerce-account {
+	.addresses .title .edit,
+	ul.digital-downloads li .count {
+		margin-top: 9px;
+	}
+}

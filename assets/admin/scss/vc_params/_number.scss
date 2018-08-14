@@ -1,0 +1,124 @@
+.tm_number {
+	display: inline-block;
+	vertical-align: top
+}
+
+.tm_number span {
+	line-height: 40px;
+	margin-left: 10px
+}
+
+.tm_number input[type=number] {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	-moz-appearance: textfield;
+	height: 40px;
+	width: 70px;
+	margin: 0
+}
+
+.tm_number input[type=number]::-webkit-inner-spin-button, .tm_number input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none
+}
+
+.tm_number .minus, .tm_number .plus {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	width: 30px;
+	height: 40px;
+	border: 1px solid #dddddd;
+	background-color: #eeeeee;
+	color: #888888;
+	margin: 0;
+	padding: 0
+}
+
+.tm_number .minus {
+	border-right-width: 0
+}
+
+.tm_number .plus {
+	border-left-width: 0
+}
+
+.tm_number .minus:focus, .tm_number .plus:focus {
+	outline: none;
+	border-color: #5b9dd9;
+	border-width: 1px !important;
+	-webkit-box-shadow: 0 0 2px rgba(30, 140, 190, .8);
+	box-shadow: 0 0 2px rgba(30, 140, 190, .8)
+}
+
+.tm_number_responsive .responsive_options {
+	cursor: pointer;
+	display: inline-block;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.tm_number_responsive .responsive_options > span {
+	vertical-align: top
+}
+
+.tm_number_responsive .responsive_options .unit {
+	display: inline-block;
+	vertical-align: top
+}
+
+.tm_number_responsive .number_responsive_item {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+.tm_number_responsive .number_responsive_item > label {
+	width: 30px;
+	height: 38px;
+	text-align: center;
+	background: #eeeeee;
+	border: 1px solid #dddddd;
+	border-right: none;
+	vertical-align: top
+}
+
+.tm_number_responsive .number_responsive_item > label > i {
+	font-size: 16px
+}
+
+.tm_number_responsive .number_responsive_item input[type=number] {
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: top;
+	-moz-appearance: textfield
+}
+
+.tm_number_responsive .number_responsive_item input[type=number]::-webkit-inner-spin-button, .tm_number_responsive .number_responsive_item input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none
+}
+
+.tm_number_responsive .number_responsive_item .buttons {
+	display: inline-block;
+	vertical-align: top
+}
+
+.tm_number_responsive .number_responsive_item .minus, .tm_number_responsive .number_responsive_item .plus {
+	height: 20px;
+	width: 20px;
+	font-size: 14px;
+	display: block
+}
+
+.tm_number_responsive .number_responsive_item .minus {
+	border-left-width: 0;
+	border-right-width: 1px
+}
+
+.tm_number_responsive .number_responsive_item .plus {
+	border-bottom-width: 0
+}

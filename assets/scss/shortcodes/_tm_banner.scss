@@ -1,0 +1,46 @@
+.tm-banner {
+	.content-wrap {
+		position: relative;
+		height: 320px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&.style-1 {
+		.content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 84px 30px 30px 90px;
+		}
+		.heading {
+			font-size: 40px;
+			line-height: 1;
+			letter-spacing: 0;
+			margin-bottom: 85px;
+		}
+	}
+	&.style-2 {
+		.content-wrap {
+			position: relative;
+			text-align: center;
+		}
+		.content {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			transform: translate(0, -50%);
+		}
+		.heading {
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 1.4;
+			letter-spacing: .3em;
+			margin-bottom: 26px;
+		}
+	}
+}

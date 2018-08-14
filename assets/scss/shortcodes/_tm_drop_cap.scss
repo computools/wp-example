@@ -1,0 +1,23 @@
+.tm-drop-cap {
+	margin-bottom: 70px;
+	&.style-1 {
+		.drop-cap {
+			float: left;
+			font-size: 56px;
+			line-height: 50px;
+			padding-top: 4px;
+			padding-right: 12px;
+			padding-left: 3px;
+		}
+	}
+	&.style-2 {
+		.drop-cap {
+			float: left;
+			font-size: 56px;
+			line-height: 50px;
+			padding: 7px 13px 7px 9px;
+			color: #ffffff;
+			margin: -8px 10px 0 -18px;
+		}
+	}
+}

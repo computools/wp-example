@@ -1,0 +1,164 @@
+.gmap-marker-wrap {
+	text-align: center;
+	padding: 30px 50px;
+}
+
+.gmap-marker-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+
+.gmap-marker-content {
+	font-size: 20px;
+}
+
+
+.animated-dot {
+	width: 20px;
+	height: 20px;
+	left: -9px;
+	top: -5px;
+	position: relative
+}
+
+.animated-dot .middle-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 30px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	transform-origin: 50% 50%;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite
+}
+
+.animated-dot .middle-dot:after {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: ' ';
+	background-color: #fff;
+	border-radius: 30px;
+	z-index: 100;
+	opacity: 0;
+	animation: animationSignal2 cubic-bezier(0,.55,.55,1) 2s;
+	transform-origin: 50% 50%;
+	animation-fill-mode: forwards;
+	animation-delay: 0.78s;
+	animation-iteration-count: infinite
+}
+
+.animated-dot .signal {
+	width: 180px;
+	pointer-events: none;
+	height: 180px;
+	border-radius: 200px;
+	position: absolute;
+	left: -80px;
+	top: -80px;
+	opacity: 0;
+	-webkit-animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+	animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+	transform-origin: 50% 50%;
+	animation-fill-mode: forwards;
+	animation-delay: 0.78s;
+	animation-iteration-count: infinite
+}
+
+.animated-dot .signal2 {
+	width: 180px;
+	height: 180px;
+	pointer-events: none;
+	border-radius: 200px;
+	position: absolute;
+	left: -80px;
+	top: -80px;
+	opacity: 0;
+	-webkit-animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+	animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+	transform-origin: 50% 50%;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	animation-iteration-count: infinite
+}
+
+@-webkit-keyframes animationSignal {
+	0% {
+		opacity: 0;
+		transform: scale(0.00)
+	}
+
+	1% {
+		opacity: 0.25
+	}
+
+	20% {
+		opacity: 0.25
+	}
+
+	60% {
+		transform: scale(1);
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes animationSignal2 {
+	0% {
+		opacity: 0
+	}
+
+	1% {
+		opacity: 0.2
+	}
+
+	20% {
+		opacity: 0.17
+	}
+
+	60% {
+		opacity: 0
+	}
+}
+
+@keyframes animationSignal {
+	0% {
+		opacity: 0;
+		transform: scale(0.00)
+	}
+
+	1% {
+		opacity: 0.25
+	}
+
+	20% {
+		opacity: 0.25
+	}
+
+	60% {
+		transform: scale(1);
+		opacity: 0
+	}
+}
+
+@keyframes animationSignal2 {
+	0% {
+		opacity: 0
+	}
+
+	1% {
+		opacity: 0.2
+	}
+
+	20% {
+		opacity: 0.17
+	}
+
+	60% {
+		opacity: 0
+	}
+}

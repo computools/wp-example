@@ -1,0 +1,14 @@
+.vc_separator {
+	&.position-top {
+		margin: 0;
+		position: absolute;
+		top: 0;
+		width: calc(100% - 30px);
+	}
+	&.position-bottom {
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		width: calc(100% - 30px);
+	}
+}

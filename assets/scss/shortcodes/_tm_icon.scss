@@ -1,0 +1,17 @@
+.tm-icon {
+	.icon {
+		font-size: 20px;
+		i {
+			font-size: inherit;
+			font-weight: inherit;
+		}
+	}
+	
+	.tm-svg {
+		display: inline-block;
+	}
+	
+	.tm-svg * {
+		stroke: currentColor;
+	}
+}

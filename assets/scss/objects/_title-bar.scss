@@ -1,0 +1,75 @@
+.page-title-bar {
+	position: relative;
+}
+
+.page-title-bar-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.page-title-bar-inner {
+	border-bottom: 1px solid transparent;
+}
+
+.page-title-bar-01,
+.page-title-bar-04 {
+	.page-breadcrumb {
+		position: absolute;
+		bottom: 47px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.page-title-bar-heading {
+		margin-bottom: 7px;
+	}
+
+	.page-title-bar-inner {
+		text-align: center;
+		> div {
+			width: 100%;
+		}
+	}
+}
+
+.page-title-bar-02,
+.page-title-bar-03 {
+	.page-breadcrumb {
+		text-align: right;
+	}
+}
+
+.insight_core_breadcrumb {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		+ li {
+			position: relative;
+			padding-left: 11px;
+			&:before {
+				content: '/';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(0, -50%);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-title-bar-02,
+	.page-title-bar-03 {
+		.page-title-bar {
+			text-align: center;
+			.page-breadcrumb {
+				margin-top: 10px;
+				text-align: center;
+			}
+		}
+	}
+}

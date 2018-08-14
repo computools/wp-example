@@ -1,0 +1,201 @@
+.tm-rotate-box {
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+
+	.flipper {
+		position: relative;
+		&:hover {
+			.front,
+			.back {
+				transform-style: preserve-3d;
+				transition: transform 1s cubic-bezier(.3, 1, .6, 1);
+			}
+		}
+	}
+
+	.to-left,
+	.to-right {
+		.front {
+			transform: rotateY(0deg);
+		}
+	}
+
+	.to-top,
+	.to-bottom {
+		.front {
+			transform: rotateX(0deg);
+		}
+	}
+
+	.to-top {
+		.back {
+			transform: rotateX(-180deg);
+		}
+
+		&:hover {
+			.front {
+				transform: rotateX(180deg);
+			}
+
+			.back {
+				transform: rotateX(0deg);
+			}
+		}
+	}
+
+	.to-bottom {
+		.back {
+			transform: rotateX(180deg);
+		}
+
+		&:hover {
+			.front {
+				transform: rotateX(-180deg);
+			}
+
+			.back {
+				transform: rotateX(0deg);
+			}
+		}
+	}
+	.to-left {
+		.back {
+			transform: rotateY(180deg);
+		}
+
+		&:hover {
+			.front {
+				transform: rotateY(-180deg);
+			}
+
+			.back {
+				transform: rotateY(0deg);
+			}
+		}
+	}
+
+	.to-right {
+		.back {
+			transform: rotateY(-180deg);
+		}
+
+		&:hover {
+			.front {
+				transform: rotateY(180deg);
+			}
+
+			.back {
+				transform: rotateY(0deg);
+			}
+		}
+	}
+
+	.thumb-wrap {
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+	}
+
+	.front,
+	.back {
+		background-size: cover;
+		min-height: 500px;
+		z-index: 1;
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		perspective: inherit;
+		transition: transform .8s cubic-bezier(.5, .2, .2, .8);
+	}
+
+	.back {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		.content-wrap {
+			top: 50%;
+			left: 0;
+			transform: translate3d(0, -50%, 50px) scale(.9);
+		}
+	}
+
+	.content-wrap {
+		position: absolute;
+		width: 100%;
+		display: block;
+		transform-style: preserve-3d;
+		perspective: inherit;
+		backface-visibility: hidden;
+		padding: 50px 30px;
+		z-index: 2;
+		// center
+		top: 50%;
+		left: 0;
+		transform: translate3d(0, -50%, 50px) scale(.9);
+	}
+
+	.heading {
+		font-size: 32px;
+		margin-bottom: 20px;
+		color: #fff;
+	}
+
+	.text {
+		color: #fff;
+		margin: 0 auto 30px;
+		max-width: 420px;
+	}
+
+	&.style-2 {
+
+		.front,
+		.back {
+			border-radius: 5px;
+		}
+
+		.heading {
+			font-size: 30px;
+			font-weight: 600;
+			color: #fff;
+		}
+
+		.text {
+			color: #fff;
+			margin: 52px auto 70px;
+			max-width: 420px;
+			font-size: 15px;
+			line-height: 1.53;
+		}
+
+		.tm-button {
+			color: #fff;
+
+			&.style-text {
+				font-size: 13px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				padding: 0 0 5px;
+
+				&:before {
+					@extend %transit2;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					height: 1px;
+					width: 0;
+					content: '';
+					background: currentColor;
+				}
+
+				&:hover {
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

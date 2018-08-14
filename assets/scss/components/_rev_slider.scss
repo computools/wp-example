@@ -1,0 +1,106 @@
+.rev_slider {
+	iframe {
+		border: 0 !important;
+	}
+}
+
+#rs-demo-id {
+}
+
+#rev_slider_28_1_wrapper .tp-loader.spinner3 div {
+	background-color: #fff !important;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01.tp-span-wrapper {
+	border-bottom: 1px solid #eee;
+	background: #fff;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab {
+	transition: all .5s;
+	opacity: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #fff;
+	border-left: 1px solid #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab:last-child {
+	border-right: 1px solid #eee;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab-content {
+	overflow: hidden;
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab-number {
+	display: inline-block;
+	color: #d8d8d8;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 0;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab-title {
+	display: inline-block;
+	text-align: left;
+	color: #999;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 17px;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab:before,
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab:before {
+	content: '';
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%, 15px);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab:hover:before,
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab.selected:before {
+	transform: translate(-50%, 0);
+	opacity: 1;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab:hover,
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab.selected {
+	box-shadow: 0 12px 30px rgba(34, 34, 34, 0.07);
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab:hover .tp-tab-number,
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab.selected .tp-tab-number {
+	color: #46deb1;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab:hover .tp-tab-title,
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab.selected .tp-tab-title {
+	color: #222;
+}
+
+#rev_slider_28_1_wrapper .moody-tab-01 .tp-tab-mask {
+	overflow: visible !important;
+}
+
+/* media queries */
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}

@@ -1,0 +1,42 @@
+.tm-view-demo-icon {
+	.grid-item {
+		margin-bottom: 30px;
+		> a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.item-wrap {
+		@extend %transit2;
+		overflow: hidden;
+		padding: 35px 30px;
+		height: 100%;
+		border-radius: 5px;
+		background: #ffffff;
+		box-shadow: 0 7px 20px rgba(0, 0, 0, .06);
+		text-align: center;
+		&:hover {
+			box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+			transform: translateY(-3px);
+		}
+	}
+
+	.item-icon {
+		margin-bottom: 13px;
+		i {
+			height: 46px;
+			font-size: 46px;
+			line-height: 46px;
+		}
+	}
+
+	.heading {
+		font-size: 20px;
+		line-height: 1.15;
+		a {
+			color: inherit;
+		}
+	}
+}

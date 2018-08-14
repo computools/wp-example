@@ -1,0 +1,12 @@
+.tm-slider {
+	.spacing {
+		height: 32px;
+	}
+	.heading {
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+	&.fw-image .image img {
+		width: 100%;
+	}
+}

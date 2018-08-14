@@ -1,0 +1,115 @@
+.tm_spacing .tm_spacing-layout {
+	width: 350px !important;
+	-webkit-box-flex: initial;
+	-webkit-flex-grow: initial;
+	-ms-flex-positive: initial;
+	flex-grow: initial;
+}
+
+.tm_spacing input.tm_spacing-item {
+	-moz-appearance: textfield;
+	position: absolute;
+	text-align: center;
+	padding: 3px 0;
+	height: 24px;
+	width: 34px;
+	margin: 0;
+	border: 1px solid #bdbdbd;
+	font-size: 11px;
+	line-height: 11px;
+}
+
+.tm_spacing-layout * {
+	margin: 44px;
+	position: relative;
+}
+
+.tm_spacing-field-wrap input[type=number]::-webkit-inner-spin-button,
+.tm_spacing-field-wrap input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none
+}
+
+.tm_spacing .tm_spacing-field-wrap label {
+	position: absolute;
+	font-size: 9px;
+	line-height: 9px;
+	top: 6px;
+	left: 5px;
+	color: #2c2c2c;
+	margin: 0;
+	padding: 0;
+}
+
+.tm_spacing-field-wrap.tm-margin {
+	border: 1px dashed #bababa;
+	margin: 1px;
+}
+
+.tm_spacing-field-wrap.tm-border {
+	border: 1px solid #d7d7d7;
+	background: #f6f6f6;
+}
+
+.tm_spacing-field-wrap.tm-padding {
+	border: 1px solid #bababa;
+	background: #ebebeb;
+}
+
+.tm_spacing .tm_spacing-top {
+	top: 11px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.tm_spacing .tm_spacing-bottom {
+	bottom: 11px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.tm_spacing .tm_spacing-left {
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 5px;
+}
+
+.tm_spacing .tm_spacing-right {
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 5px;
+}
+
+.tm_spacing .tm_spacing-icon {
+	border: 1px solid #bababa;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	text-align: center;
+	font-size: 32px;
+	box-sizing: border-box;
+}
+
+.tm_spacing .tm_spacing-icon i {
+	margin: 8px auto;
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
+.vc_css-editor .vc_layout-onion .vc_margin .vc_border .vc_padding .vc_content i:before {
+	content: '\f108';
+}
+
+.vc_css-editor .vc_layout-onion .vc_margin .vc_border .vc_padding .vc_content {
+	line-height: 50px !important;
+	font-size: 32px !important;
+}
+
+.vc_css-editor .vc_layout-onion .vc_margin .vc_border .vc_padding .vc_content i {
+	background: none !important;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,103 @@
+/*!
+Theme Name: TM Moody
+Theme URI: http://moody.thememove.com
+Author: ThemeMove
+Author URI: http://thememove.com
+Description: Moody - A Modern & Flexible Multipurpose WordPress Theme.
+Version: 1.4.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tm-moody
+Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Settings
+# Vendor
+# Tools
+# Generic
+# Elements
+# Objects
+# Components
+# Trumps
+--------------------------------------------------------------*/
+/*
+Settings store all variables, config switches, etc.
+Split up into logical sections, the smaller and simpler the better.
+*/
+@import "settings/global";
+@import "settings/color";
+@import "settings/typography";
+@import "settings/bootstrap";
+/*
+Tools store all programic Sass functionality.
+If your tooling is simplistic enough, you can do something like:
+  tools.mixins
+If your tooling is more complex you can split it up like:
+  tools.grid
+  tools.typography
+  etc.
+*/
+@import "tools/mixins";
+@import "tools/family";
+/*
+Generic rules are project-agnostic.
+These can be copied from any project to the next
+*/
+@import "generic/normalize";
+@import "generic/reset";
+@import "generic/box-sizing";
+@import "vendor/bootstrap/bootstrap-grid";
+@import "vendor/hint/hint";
+@import "vendor/post-like/post-like-system";
+@import "vendor/swiper/swiper";
+@import "vendor/light-gallery/lightgallery";
+@import "vendor/justified-gallery/justifiedgallery";
+@import "tools/placeholder";
+/*
+Elements are rules for classless HTML tags.
+There can exist no classes at this layer, only further into our triangle.
+*/
+@import "elements/headings";
+@import "elements/links";
+@import "elements/lists";
+@import "elements/forms";
+@import "elements/formatting";
+@import "elements/images";
+@import "elements/tables";
+@import "elements/typography";
+/*
+Objects are "formless", in other words invisible to the user, no cosmetics
+  Eg. wrappers, grid systems, etc.
+This is the first layer of classes and should be agnostically named
+  Eg. list-inline, ui-list, etc.
+*/
+@import "objects/all";
+@import "mixins/mixins-base";
+/* Icon Fonts */
+@import "fonts/font-awesome";
+@import "fonts/simple-line";
+/*
+Components are the stuff of UI. Eg. buttons, special titles, etc.
+These get much more explicitly named: eg. products-list, etc.
+*/
+@import "components/all";
+/*
+Shortcodes
+*/
+@import "shortcodes/all";
+/*
+Widgets
+*/
+@import "widgets/all";
+/*
+Woo Commerce
+*/
+@import "woocommerce/all";
+/*
+Trumps are overrides, helpers, utilities. They should only affect
+one piece of DOM at a time and usually carry !important
+*/
+@import 'trumps/all';
+@import 'trumps/vc';

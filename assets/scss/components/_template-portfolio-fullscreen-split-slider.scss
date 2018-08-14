@@ -1,0 +1,158 @@
+.page-template-portfolio-fullscreen-split-slider {
+	.site {
+		height: 100%;
+	}
+	#multiscroll-nav {
+		&.right {
+			right: 90px;
+		}
+		li {
+			width: 19px;
+			height: 18px;
+			.active,
+			&:hover {
+				span {
+					&:before {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+		span {
+			width: 16px;
+			height: 16px;
+			background-color: transparent;
+			border: 0;
+			&:before {
+				@extend %transit2;
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				border-radius: 100%;
+				width: 8px;
+				height: 8px;
+				transform: translate(-50%, -50%);
+				background: #dddddd;
+				z-index: 1;
+			}
+		}
+	}
+	.ms-section {
+		background: #000000 no-repeat center;
+		background-size: cover;
+	}
+
+	.ms-right {
+		.ms-section {
+			&:before {
+				background: #000000;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				z-index: 1;
+			}
+			.ms-tableCell {
+				z-index: 2;
+				position: relative;
+			}
+		}
+	}
+	.portfolio-info {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+	.portfolio-title {
+		max-width: 550px;
+		margin-left: -5px;
+		margin-bottom: 48px;
+		a {
+			font-size: 60px;
+			color: #ffffff;
+			font-weight: bold;
+			letter-spacing: -0.43px;
+			line-height: 1.05em;
+		}
+	}
+	.portfolio-categories {
+		margin-bottom: 32px;
+		a {
+			color: inherit;
+		}
+	}
+	.extra-info {
+		position: fixed;
+		bottom: 50px;
+		right: 1px;
+		width: 50%;
+		padding: 0 100px 0 120px;
+		.left-column {
+			font-size: 14px;
+		}
+	}
+	.tm-social-network {
+		margin: 0 -10px;
+		text-align: right;
+		a {
+			padding: 5px 10px;
+			color: #ffffff;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.page-template-portfolio-fullscreen-split-slider {
+		#multiscroll-nav {
+			&.right {
+				right: 15px;
+			}
+		}
+		.portfolio-info {
+			padding: 0 60px 0 30px;
+		}
+		.extra-info {
+			padding: 0 20px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-template-portfolio-fullscreen-split-slider {
+		.ms-left {
+			opacity: 0;
+		}
+		.ms-right {
+			width: 100% !important;
+			.ms-section {
+				&:before {
+					opacity: .6;
+				}
+			}
+		}
+		.portfolio-title {
+			a {
+				font-size: 50px;
+			}
+		}
+		.extra-info {
+			width: 100%;
+			.left-column {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.page-template-portfolio-fullscreen-split-slider {
+		.portfolio-title {
+			a {
+				font-size: 40px;
+			}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+.tm-social-networks {
+	@extend %clearfix;
+	padding: 0;
+	margin: 0 -8px;
+
+	.item {
+		list-style-type: none;
+		margin: 0 0 5px;
+	}
+
+	.link {
+		padding: 5px 8px;
+	}
+
+	&.layout-list {
+		display: block;
+	}
+
+	&.layout-inline {
+		.item {
+			display: inline-block;
+		}
+	}
+
+	&.layout-two-columns {
+		margin: 0 -10px;
+		.item {
+			display: block;
+			float: left;
+			width: 50%;
+		}
+		.link {
+			padding: 5px 10px;
+		}
+	}
+
+	&.style-icons {
+		font-size: 20px;
+	}
+
+	&.style-icons-with-border {
+		font-size: 16px;
+
+		.item {
+			padding: 0;
+		}
+
+		.link {
+			width: 50px;
+			height: 50px;
+			line-height: 48px;
+			border: 1px solid #eee;
+			background: #fff;
+			color: #222;
+			text-align: center;
+			border-radius: 50%;
+			padding: 0;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	&.style-icon-title {
+		.link-icon {
+			font-size: 18px;
+			min-width: 25px;
+			margin-right: 5px;
+		}
+	}
+
+	&.style-title {
+		.link:hover {
+			.link-text {
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+		.link-text {
+			position: relative;
+			&:after {
+				transition: width .3s cubic-bezier(.645, .045, .355, 1);
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				content: '';
+				height: 1px;
+				width: 0;
+				background: currentColor;
+			}
+		}
+	}
+
+	.link {
+		display: inline-block;
+		color: inherit;
+	}
+
+	// fix wp 4.7 widget
+	br {
+		display: none;
+	}
+}

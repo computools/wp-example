@@ -1,0 +1,137 @@
+/*--------------------------------------------------------------
+# Top bar
+--------------------------------------------------------------*/
+.page-top-bar {
+	z-index: 99999;
+	border-bottom: 1px solid transparent;
+	ul {
+		z-index: 9999;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	a {
+		display: block;
+	}
+	.menu {
+		li {
+			position: relative;
+		}
+
+		> li {
+			display: inline-block;
+			margin-bottom: 0;
+			border: 0;
+			> a {
+				padding: 7px 10px
+			}
+		}
+
+		.menu-item-has-children {
+			&:hover {
+				> .sub-menu {
+					display: block;
+				}
+			}
+		}
+
+		.sub-menu {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			display: none;
+			min-width: 250px;
+			width: 100%;
+			background-color: #fff;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+
+			a {
+				padding: 10px 15px;
+				+ a {
+					border-top: 1px solid #eee;
+				}
+			}
+			.sub-menu {
+				top: 0;
+				left: 100%;
+			}
+		}
+	}
+}
+
+.top-bar-wrap {
+	display: flex;
+	&.top-bar-right {
+		justify-content: flex-end;
+	}
+}
+
+.top-bar-info {
+	.info-item {
+		display: inline-block;
+		line-height: 1;
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.info-icon {
+		font-size: 18px;
+		margin-right: 2px;
+		vertical-align: middle;
+	}
+}
+
+.top-bar-social-network {
+	a {
+		line-height: 1;
+		display: inline-block;
+		+ a {
+			margin-left: 15px;
+		}
+	}
+}
+
+.page-top-bar-02 {
+	.top-bar-info {
+		.info-item {
+			height: 40px;
+			line-height: 40px;
+			padding: 0 20px;
+			border-left: 1px solid #eee;
+			margin-right: 0;
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.top-bar-social-network {
+		@extend %clearfix;
+		a {
+			float: left;
+			font-size: 14px;
+			border-left: 1px solid #eee;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			margin-left: 0;
+
+			&:last-child {
+				border-right: 1px solid #eee;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.top-bar-wrap {
+		&.top-bar-left,
+		&.top-bar-right {
+			justify-content: center;
+			text-align: center;
+		}
+	}
+}

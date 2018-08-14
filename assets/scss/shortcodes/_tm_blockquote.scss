@@ -1,0 +1,91 @@
+.tm-blockquote {
+	position: relative;
+	margin-bottom: 30px;
+	blockquote {
+		padding: 45px 40px 55px;
+		color: inherit;
+		font-size: inherit;
+		&:before {
+			display: none;
+		}
+	}
+	svg {
+		position: absolute;
+		top: 27px;
+		right: 27px;
+	}
+	.heading {
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+	&.skin-dark {
+		color: #fff;
+		.heading {
+			color: #fff;
+		}
+		path {
+			fill: #fff;
+		}
+	}
+
+	&.style-3 {
+
+		blockquote {
+			font-family: inherit;
+			text-align: left;
+			padding: 0;
+			font-style: normal;
+		}
+
+		svg {
+			position: relative;
+			top: -10px;
+			left: 0;
+			right: auto;
+		}
+
+		.quote-text {
+			margin-top: 25px;
+			font-size: 42px;
+			font-weight: 600;
+			line-height: 1.19;
+			color: #222;
+		}
+
+		.block-header {
+			margin-top: 127px;
+		}
+
+		.heading {
+			font-size: 16px;
+			font-weight: 600;
+			color: #222;
+			margin-bottom: 10px;
+		}
+
+		.sub-heading {
+			font-size: 14px;
+			color: inherit;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-blockquote {
+		&.style-3 {
+			.quote-text {
+				font-size: 36px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-blockquote {
+		&.style-3 {
+			.quote-text {
+				font-size: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,96 @@
+.typed-cursor {
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.tm-heading {
+	&.center {
+		.heading {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	a {
+		font-size: inherit;
+		color: inherit;
+		position: relative;
+		&:before {
+			@extend %transit2;
+			content: '';
+			height: 1px;
+			width: 0;
+			background-color: currentColor;
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+		}
+		&:hover {
+			color: inherit;
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+	.icon {
+		display: inline-block;
+		vertical-align: bottom;
+		margin-right: 9px;
+	}
+	&.secondary-font {
+		.heading {
+			font-family: inherit !important;
+		}
+	}
+}
+
+.highlight-text,
+.typed-text,
+.typed-text-2 {
+	mark {
+		background: none;
+	}
+}
+
+.typed-text-2 {
+	mark {
+		font-style: italic;
+	}
+}

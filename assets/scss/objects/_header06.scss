@@ -1,0 +1,49 @@
+.header06 {
+	.navigation {
+		text-align: center;
+	}
+	.branding,
+	.header-right {
+		z-index: 9999;
+	}
+}
+
+.header06 {
+	&.desktop-menu {
+		.branding {
+			position: absolute;
+			top: 50%;
+			left: 30px;
+			transform: translate(0, -50%);
+		}
+		.header-right {
+			position: absolute;
+			top: 50%;
+			right: 30px;
+			transform: translate(0, -50%);
+		}
+	}
+	&.mobile-menu {
+		.header-wrap {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			align-items: center;
+			padding: 0 15px;
+			.branding {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.header06 {
+		.branding {
+			left: 110px !important;
+		}
+		.header-right {
+			right: 110px !important;
+		}
+	}
+}

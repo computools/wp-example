@@ -1,0 +1,40 @@
+.search-results,
+.search-no-results {
+	.page-main-content {
+		.search-form {
+			position: relative;
+			.search-submit {
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+				right: 0;
+				border: 0;
+				padding: 0;
+				font-size: 21px;
+				background: none;
+				color: #333333;
+			}
+		}
+	}
+}
+
+.search-page-search-form {
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.search-no-results {
+	.no-results {
+		background: #ffffff;
+		padding: 45px 30px 60px;
+		border: 1px solid #eeeeee;
+		.page-title {
+			margin-bottom: 21px;
+		}
+		.search-no-results-text {
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.tm-flickr {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+	.flickr_badge_image {
+		height: auto;
+		margin: 0;
+		padding: 5px;
+		image {
+			width: 100%;
+		}
+	}
+	&-1 {
+		.flickr_badge_image {
+			width: 100%;
+		}
+	}
+	&-2 {
+		.flickr_badge_image {
+			width: 50%;
+		}
+	}
+	&-3 {
+		.flickr_badge_image {
+			width: 33.333333%;
+		}
+	}
+	&-4 {
+		.flickr_badge_image {
+			width: 25%;
+		}
+	}
+	&-5 {
+		.flickr_badge_image {
+			width: 20%;
+		}
+	}
+	&-6 {
+		.flickr_badge_image {
+			width: 16.6666666667%;
+		}
+	}
+	&-7 {
+		.flickr_badge_image {
+			width: 14.2857142857%;
+		}
+	}
+	&-8 {
+		.flickr_badge_image {
+			width: 12.5%;
+		}
+	}
+	&-9 {
+		.flickr_badge_image {
+			width: 11.1111111111%;
+		}
+	}
+	&-10 {
+		.flickr_badge_image {
+			width: 10%;
+		}
+	}
+}

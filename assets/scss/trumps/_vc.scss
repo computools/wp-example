@@ -1,0 +1,23 @@
+.rmbg-lg-down {
+	@include media-breakpoint-down(xl) {
+		background-image: none !important;
+	}
+}
+
+.rmbg-md-down {
+	@include media-breakpoint-down(lg) {
+		background-image: none !important;
+	}
+}
+
+.rmbg-sm-down {
+	@include media-breakpoint-down(md) {
+		background-image: none !important;
+	}
+}
+
+.rmbg-xs-down {
+	@include media-breakpoint-down(sm) {
+		background-image: none !important;
+	}
+}

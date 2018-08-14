@@ -1,0 +1,33 @@
+.tm-image-radio {
+	> input[type=radio] {
+		position: absolute;
+		left: -9999px;
+	}
+	> label {
+		display: inline-block;
+		cursor: pointer;
+		margin: 0 12px 12px 0;
+		padding: 0;
+		position: relative;
+		line-height: 1;
+		transition: box-shadow .3s ease;
+		img {
+			display: block;
+			margin: 0;
+			padding: 0;
+			border: 1px solid #dfdfdf;
+		}
+		&:hover {
+			box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.35);
+		}
+		&.selected {
+			img {
+				border: 1px solid #45deb0;
+			}
+		}
+	}
+	[data-hint] {
+		z-index: 2;
+		display: block;
+	}
+}

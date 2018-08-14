@@ -1,0 +1,120 @@
+.popup-search-opened {
+	overflow: hidden !important;
+	width: 100%;
+	height: 100%;
+	.page-popup-search {
+		visibility: visible;
+		opacity: .95;
+		.page-popup-search-inner {
+			visibility: visible;
+			opacity: 1;
+			transform: translate(-50%, -50%) scale(1);
+		}
+		.search-field {
+			transition: .5s ease-out .3s;
+			transform: scale3d(1, 1, 1);
+		}
+		.form-description {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+}
+
+.page-popup-search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: all ease-in-out .25s;
+	&-inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		visibility: hidden;
+		padding: 0 50px;
+		width: 75%;
+		text-align: center;
+		font-size: 18px;
+		opacity: 0;
+		transition: all ease-in-out .3s;
+		transform: translate(-50%, -50%) scale(.8);
+	}
+
+	.popup-search-close {
+		position: absolute;
+		top: 60px;
+		right: 60px;
+		color: #ffffff;
+		font-size: 40px;
+		line-height: 1;
+		cursor: pointer;
+	}
+
+	.form-description {
+		display: block;
+		padding: 0.85em 0;
+		text-align: right;
+		font-weight: bold;
+		font-size: 90%;
+		opacity: 0;
+		transition: opacity .4s, transform .4s;
+		transform: translate3d(0, 50px, 0);
+	}
+
+	.search-form {
+		position: relative;
+	}
+
+	.search-field {
+		padding: .05em 0;
+		height: auto;
+		border: 0;
+		border-bottom: 5px solid transparent;
+		border-radius: 0;
+		background-color: transparent;
+		font-size: 10vw;
+		transition: transform .3s;
+		transform: scale3d(0, 1, 1);
+		transform-origin: 0% 50%;
+		-webkit-appearance: none;
+		&::-webkit-input-placeholder {
+			color: transparent;
+			font-size: 10vw;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			color: transparent;
+			font-size: 10vw;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			color: transparent;
+			font-size: 10vw;
+		}
+		&:-ms-input-placeholder {
+			color: transparent;
+			font-size: 10vw;
+		}
+	}
+
+	.search-submit {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-popup-search {
+		&-inner {
+			padding: 0 15px;
+		}
+		.popup-search-close {
+			top: 20px;
+			right: 20px;
+		}
+	}
+}

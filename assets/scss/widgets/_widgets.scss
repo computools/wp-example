@@ -1,0 +1,301 @@
+.page-content {
+	.widget {
+		a {
+			color: inherit;
+		}
+		+ .widget {
+			margin: 75px 0 0;
+		}
+	}
+	.widget-title,
+	.widgettitle {
+		margin-bottom: 35px;
+		text-transform: capitalize;
+		letter-spacing: -.03em;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.3;
+	}
+}
+
+.page-sidebar {
+	.page-sidebar-inner {
+		height: 100%;
+	}
+	.page-sidebar-content {
+		padding: 50px;
+		border: 1px solid #eee;
+		background-color: #fcfcfc;
+	}
+}
+
+.wpb_widgetised_column {
+	&.left {
+		padding-right: 30px;
+		.wpb_wrapper {
+			padding-right: 30px;
+			&:after {
+				right: 0;
+			}
+		}
+	}
+	&.right {
+		padding-left: 30px;
+		.wpb_wrapper {
+			padding-left: 30px;
+			&:after {
+				left: 0;
+			}
+		}
+	}
+	.wpb_wrapper {
+		position: relative;
+		padding-top: 100px;
+		max-width: 370px;
+		width: 100%;
+		&:after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+			width: 3000px;
+			height: 5000px;
+			background-color: #fff;
+			content: '';
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.wpb_widgetised_column {
+		padding: 0 !important;
+		.wpb_wrapper {
+			padding: 50px 30px;
+			background: #fff;
+			max-width: 100%;
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.page-footer {
+
+	.widget-title,
+	.widgettitle {
+		padding-top: 21px;
+		font-weight: 500;
+		font-style: normal;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		font-size: 16px;
+		color: #fff;
+		margin-bottom: 36px;
+	}
+
+	.widget {
+		margin-bottom: 36px;
+	}
+	.widget_nav_menu,
+	.insight-core-bmw {
+		.menu {
+			margin-top: -12px;
+		}
+
+		li {
+			padding: 0;
+			border: 0;
+		}
+	}
+
+	.widget_recent_entries,
+	.widget_recent_comments,
+	.widget_archive,
+	.widget_categories,
+	.widget_meta,
+	.widget_product_categories,
+	.widget_rss,
+	.widget_pages {
+		> ul {
+			> li {
+				padding: 17px 0 21px;
+				border-color: #333;
+				&:first-child {
+					padding-top: 0;
+				}
+				&:last-child {
+					border: 0;
+				}
+			}
+		}
+	}
+}
+
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_archive,
+.widget_categories,
+.widget_meta,
+.widget_product_categories,
+.widget_rss,
+.widget_pages,
+.widget_nav_menu,
+.insight-core-bmw {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		@extend %transit;
+		display: block;
+		margin: 0;
+		border-bottom: 1px solid #eee;
+		list-style-type: none;
+		.children {
+			padding-top: 10px;
+			padding-left: 15px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	a {
+		display: block;
+		font-size: inherit;
+		font-family: inherit;
+		padding: 12px 0;
+	}
+}
+
+.widget_pages,
+.widget_nav_menu {
+	.sub-menu {
+		> li {
+			border-top: 1px solid #eee;
+			border-bottom: 0;
+
+			> a {
+				padding-left: 10px;
+			}
+			.sub-menu {
+				> li {
+					> a {
+						padding-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.widget_categories,
+.widget_product_categories {
+	> ul {
+		> li {
+			border-bottom: 1px solid #eee;
+		}
+	}
+	li {
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		display: block;
+		padding: 12px 0;
+	}
+	.count {
+		float: right;
+	}
+	.children {
+		padding: 0 !important;
+		li {
+			border-top: 1px solid #eee;
+			border-bottom: 0;
+		}
+		a {
+			padding-left: 30px;
+			color: #999;
+		}
+		.children {
+			a {
+				padding-left: 60px;
+			}
+		}
+	}
+}
+
+.widget_recent_comments {
+	.comment-author-link {
+		position: relative;
+		padding-left: 24px;
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			content: '\f0e5';
+			font-family: FontAwesome;
+			line-height: 0;
+			transform: translate(0, -50%);
+		}
+	}
+
+	li {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		display: inline-block;
+	}
+}
+
+.widget_recent_entries {
+	.post-date {
+		display: block;
+		font-size: 14px;
+	}
+}
+
+.widget_calendar {
+	td, th {
+		padding: 10px 0;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.page-content {
+		.widget {
+			margin: 0 0 52px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-content {
+		.widget {
+			margin: 0 0 32px;
+		}
+	}
+	.page-sidebar {
+		margin-bottom: 50px;
+		.page-sidebar-inner {
+			.page-sidebar-content {
+				padding-right: 30px;
+				border: 1px solid #eee;
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	.single-post {
+		.page-main-content {
+			padding-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.rev-btn {
+	transition: all .5s cubic-bezier(.645, .045, .355, 1) !important;
+}
+
+.tm-label {
+	display: inline-block;
+	padding: .4em .8em;
+	margin: 0 10px 2px 0;
+	font-weight: 700;
+	line-height: 1;
+	color: #ffffff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+}
+
+.tm-label-info {
+	background-color: #337ab7;
+}
+
+.tm-label-success {
+	background-color: #5cb85c;
+}
+
+.tm-label-warning {
+	background-color: #f0ad4e;
+}
+
+.tm-label-error {
+	background-color: #d9534f;
+}

@@ -1,0 +1,37 @@
+.tm-countdown {
+	text-align: center;
+	max-width: 670px;
+	margin: 0 auto;
+	.day, .hour, .minute, .second {
+		text-align: center;
+		flex-grow: 1;
+	}
+	.countdown-wrap {
+		display: flex;
+		align-items: center;
+	}
+	.number {
+		display: inline-block;
+		text-align: center;
+		font-size: 56px;
+		line-height: 1.2;
+	}
+	.text {
+		display: block;
+	}
+	.separator {
+		font-size: 30px;
+		letter-spacing: .42px;
+	}
+	&.skin-light {
+		.number {
+			color: #ffffff;
+		}
+		.text {
+			color: rgba(255, 255, 255, .7);
+		}
+		.separator {
+			color: #ffffff;
+		}
+	}
+}

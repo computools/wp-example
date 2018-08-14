@@ -1,0 +1,191 @@
+.maintenance-bg-img {
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.maintenance-page {
+	display: table;
+	width: 100%;
+	height: 100%;
+	.tm-mailchimp-form {
+		div {
+			display: block;
+		}
+	}
+}
+
+.maintenance-header {
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: center;
+	top: 50px;
+}
+
+.maintenance-body {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.maintenance-row {
+	justify-content: center;
+}
+
+.maintenance-progress {
+	display: inline-block;
+	background-color: #f5f5f5;
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 65px;
+	position: relative;
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -6px;
+		margin-left: -6px;
+	}
+}
+
+.maintenance-number {
+	line-height: 1;
+	position: absolute;
+	min-width: 40px;
+	text-align: right;
+	top: -35px;
+	margin-left: -40px;
+}
+
+.maintenance-progress-bar {
+	height: 4px;
+	color: #fff;
+	background-color: #dec8ae;
+}
+
+.maintenance-title {
+	font-size: 30px;
+	margin-bottom: 15px;
+	@include media-breakpoint-up(sm) {
+		font-size: 48px;
+	}
+
+	&--white {
+		color: #fff;
+	}
+
+}
+
+.maintenance-text {
+	max-width: 647px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+	color: #fff;
+}
+
+.maintenance-sub-text {
+	color: #fff;
+}
+
+.maintenance-footer {
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	bottom: 50px;
+	@include media-breakpoint-up(sm) {
+		bottom: 114px;
+	}
+}
+
+.maintenance-social-list {
+	font-size: 25px;
+	@include media-breakpoint-up(sm) {
+		font-size: 40px;
+	}
+
+	> a {
+		color: #fff;
+		+ a {
+			margin-left: 35px;
+		}
+	}
+}
+
+/* Coming Soon */
+.cs-countdown {
+
+	@include media-breakpoint-up(sm) {
+		margin-bottom: 40px;
+	}
+	.countdown-wrap > div {
+		display: inline-block;
+		+ div {
+			margin-left: 20px;
+			position: relative;
+			@include media-breakpoint-up(sm) {
+				margin-left: 108px;
+			}
+			@include media-breakpoint-up(sm) {
+				&:before {
+					content: ":";
+					font-size: 30px;
+					position: absolute;
+					left: -54px;
+					top: 50%;
+					margin-top: -20px;
+					color: #fff;
+
+				}
+			}
+		}
+
+	}
+	.number,
+	.text {
+		display: block;
+	}
+
+	.number {
+		font-size: 40px;
+		line-height: 1;
+		@include media-breakpoint-up(sm) {
+			font-size: 56px;
+			line-height: 65px;
+		}
+	}
+
+	.text {
+		line-height: 30px;
+		text-transform: capitalize;
+	}
+}
+
+.cs-form {
+	margin-top: 90px;
+	[class*='col-'] {
+		flex: 0 0 100%;
+		width: 100%;
+		max-width: none;
+	}
+
+	input[type=email] {
+		max-width: 520px;
+		text-align: center;
+		margin-bottom: 20px;
+
+		&:focus {
+			border-color: #fff;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.header03 {
+	.header-wrap {
+		display: flex;
+		align-items: center;
+	}
+	.branding {
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header03 {
+		.header-wrap {
+			padding: 0 85px;
+		}
+	}
+}

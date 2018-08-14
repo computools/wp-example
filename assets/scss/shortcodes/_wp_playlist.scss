@@ -1,0 +1,24 @@
+.mejs-controls {
+	.mejs-button {
+		button {
+			transition: none;
+		}
+	}
+}
+
+.wp-audio-playlist {
+	.wp-playlist-current-item {
+		display: table;
+		.wp-playlist-caption {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.wp-playlist-item {
+		border-color: #eeeeee;
+		padding: 5px 3px;
+	}
+	.wp-playlist-item-length {
+		top: 5px;
+	}
+}

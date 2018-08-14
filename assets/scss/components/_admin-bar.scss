@@ -1,0 +1,41 @@
+.admin-bar {
+	.headroom {
+		&.headroom--not-top {
+			.page-header-inner {
+				top: 32px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 782px) {
+	html.js_active {
+		margin-top: 0 !important;
+	}
+	.admin-bar {
+		.page-top-bar,
+		.page-header {
+			margin-top: 46px;
+		}
+		.page-top-bar + .page-header {
+			margin-top: 0;
+		}
+		.headroom {
+			&.headroom--not-top {
+				.page-header-inner {
+					top: 46px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.admin-bar {
+		.headroom.headroom--not-top {
+			.page-header-inner {
+				top: 0;
+			}
+		}
+	}
+}
